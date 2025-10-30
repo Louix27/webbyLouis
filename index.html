@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebbyLouis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/png" href="/assets/logo-webby.png">
+
+</head>
+<body>
+<nav id="desktop-nav">
+  <div class="logo"><img src="assets/logo-webby-sansfond.png"></div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#offres">Mes services</a></li>
+      <li><a href="#projects">Mes projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo"><img src="assets/logo-webby-sansfond.png" alt="logo"></div>
+
+  <!-- Bouton hamburger -->
+  <button id="burgerBtn" class="hamburger-icon" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sideMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Overlay (fond assombri) -->
+<div id="menu-overlay" aria-hidden="true"></div>
+
+<!-- Panneau latéral -->
+<aside id="sideMenu" class="menu-links" role="dialog" aria-modal="true" aria-label="Menu">
+  <!-- Croix ronde -->
+  <button id="closeMenu" aria-label="Fermer le menu" class="close-round">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </button>
+
+  <ul>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#offres">Mes services</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Gros bouton en bas -->
+  <a href="#contact" class="cta-bottom">Contactez-moi</a>
+</aside>
+<section id="profile">
+  <div class="section__text">
+    <h1 class="title">Créateur de sites web</h1>
+    <p class="section__text__p2">Modernité, design et performance pour propulser votre entreprise locale.</p>
+    <div class="btn-container">
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contactez-moi
+      </button>
+    </div>
+    <div id="socials-container">
+      <img
+        src="./assets/email.png"
+        alt="Mon Instagram"
+        class="icon"
+        onclick="location.href='mailto:webbylouis1@gmail.com'"
+
+      />
+      <img
+        src="./assets/facebook.png"
+        alt="Mon iara"
+        class="icon"
+        onclick="location.href='https://iarabeauty.com/fr'"
+      />
+    </div>
+  </div>
+</section>
+<section id="about">
+  <h1 class="title2">À propos</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+        src="./assets/louis.png"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>+5 ans <br />Développement</p>
+        </div>
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>BUT Informatique</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          Je m’appelle Louis, développeur web freelance et créateur de WebbyLouis.
+          Passionné par le web et les nouvelles technologies, j’aide les entreprises, associations et indépendants à développer leur présence en ligne grâce à des sites modernes, performants et sur mesure.<br><br>
+          Mon objectif : créer des solutions simples, efficaces et élégantes, tout en accompagnant mes clients à chaque étape — de la conception à la mise en ligne, jusqu’à la maintenance.<br><br>
+          Je propose également la création de supports graphiques (logos, flyers, cartes de visite, cartes de fidélité, etc.) pour une communication cohérente et professionnelle.<br>
+          Toujours à l’écoute, je mets un point d’honneur à offrir un service de proximité et une collaboration transparente.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="offres">
+  <h1 class="title2">Mes services</h1>
+  <div class="offres-container">
+    <div class="offre-card">
+      <h1>💻</h1>
+      <h2>Site Vitrine</h2>
+      <p>
+        Mettez en avant votre activité avec un site clair, rapide et moderne. J’installe un CMS simple d’utilisation pour que vous puissiez modifier vos contenus facilement. Une courte formation est incluse.
+      </p><br>
+      <ul>
+        <li>✔️ Création complète & design</li>
+        <li>✔️ Intégration d’un CMS (WordPress)</li>
+        <li>✔️ Formation à la prise en main</li>
+        <li>✔️ Conseils stratégiques</li>
+        <li>✔️ Maintenance technique </li>
+      </ul>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contactez-moi
+      </button>
+    </div>
+    <div class="offre-card">
+      <h1>⚙️</h1>
+      <h2>Site sur Mesure</h2>
+      <p>
+        Un besoin spécifique ? Je développe un site unique, optimisé et entièrement personnalisé. Design, performance et fluidité sont au rendez-vous — vous n’avez rien à gérer.
+      </p><br>
+      <ul>
+        <li>✔️ Développement personnalisé </li>
+        <li>✔️ Site 100% unique & adapté</li>
+        <li>✔️ Analyse détaillée</li>
+        <li>✔️ Optimisation SEO & performance</li>
+        <li>✔️ Maintenance technique (en option)</li>
+      </ul>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contactez-moi
+      </button>
+    </div>
+
+    <div class="offre-card">
+      <h1>🎨</h1>
+      <h2>Design & Identité visuelle</h2>
+      <p>
+        Donnez vie à votre image de marque ! Je conçois vos supports graphiques avec soin pour une communication professionnelle et cohérente, en ligne comme sur papier.
+      </p><br><br>
+      <ul>
+        <li>✔️ Création de logos sur mesure</li>
+        <li>✔️ Flyers & affiches professionnelles</li>
+        <li>✔️ Cartes de visite & cartes de fidélité</li>
+        <li>✔️ Charte graphique & identité visuelle</li>
+        <li>✔️ Accompagnement créatif </li>
+      </ul>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contactez-moi
+      </button>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  <!-- <p class="section__text__p1">Browse My Recent</p>-->
+  <h1 class="title2">Projets</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+                  src="./assets/portfolio.png"
+                  alt="Project 1"
+                  class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Portfolio</h2>
+        <div class="btn-container">
+          <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://portfolio-louis-palie.netlify.app'"
+          >
+            Voir le site
+          </button>
+
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+                  src="./assets/menuiserie.png"
+                  alt="Project 2"
+                  class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">  <span>HYACINTHE</span> <span>Menuiserie</span></h2>
+        <div class="btn-container">
+          <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://hyacinthe-menuiserie.netlify.app'"
+          >
+            Voir le site
+          </button>
+
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+                  src="./assets/JO.png"
+                  alt="Project 3"
+                  class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Billeterie JO</h2>
+        <div class="btn-container">
+          <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href=''"
+          >
+            Voir le site
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <!--<p class="section__text__p1">Entrer en contact</p>-->
+  <h1 class="title2">Contactez-Moi</h1>
+  <form id="contact-form" class="contact-form" action="#" method="post">
+    <div>
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="from_name" required>
+    </div>
+    <div>
+      <label for="phone">Numéro de téléphone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Facultatif">
+    </div>
+    <div>
+      <label for="email">Votre email:</label>
+      <input type="email" id="email" name="reply_to" required>
+    </div>
+    <div>
+      <label for="message">Votre message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-color-1">Envoyer</button>
+  </form>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:webbylouis1@gmail.com">webbylouis1@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/facebook.png"
+        alt="Facebook icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.facebook.com/friends/requests/?profile_id=61582972926609&notif_id=1761851778885307&notif_t=friend&ref=notif">Facebook</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#offres">Mes services</a></li>
+        <li><a href="#projects">Mes projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2025 WebbyLouis. Tous droits réservés.</p>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({ publicKey: "9ZPxfQA3YuyIUrQ0X" });
+</script>
+<script>
+  // Remplace par tes identifiants EmailJS (Email Services > ton service, Email Templates > ton template)
+  const SERVICE_ID = "service_2s2ca2z";
+  const TEMPLATE_ID = "template_2frgh0i";
+
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // UI: désactiver le bouton pendant l’envoi
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi...";
+
+    try {
+      // Envoie automatiquement tous les champs du form (grâce aux name= du §3)
+      const res = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
+
+      // Succès: feedback + reset
+      alert("Merci ! Votre message a bien été envoyé ✅");
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      alert("Oups, l'envoi a échoué. Réessayez ou contactez-moi par email.");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+</script>
+</body>
+</html>
