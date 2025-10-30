@@ -129,6 +129,7 @@ section {
 
 .section__text__p2 {
   font-size: 2rem;
+  margin-bottom: 20px;
   color: #ffffff;
   font-weight: bold;
   -webkit-text-stroke: 0.3px #fffbfb;
