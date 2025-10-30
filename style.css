@@ -605,7 +605,7 @@ footer p {
     font-weight: 600;
     box-shadow: 0 12px 20px rgba(15, 98, 255, 0.3);
     transition: 0.2s ease;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   .menu-links .cta-bottom:hover {
     filter: brightness(1.05);
