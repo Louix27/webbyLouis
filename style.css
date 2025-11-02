@@ -154,12 +154,15 @@ section {
 
 .title2 {
   font-size: 3rem;
-  text-align: center;
   color: black;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
   margin-bottom: 1.5rem;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #socials-container {
@@ -449,7 +452,11 @@ section {
 .contact-form button {
   align-self: center;
   margin-top: 1rem;
-}
+}ul {
+   list-style: none;
+   padding: 0; /* Optional: Removes default padding */
+   margin: 0; /* Optional: Removes default margin */
+ }
 
 /* FOOTER */
 
